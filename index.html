@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>myPortfolio</title>
+</head>
+<body>
+    <section id="hero">
+        <header>
+            <nav>
+                <ul id="sidemenu">
+                    <li a href="#hero">Главная</li>
+                    <li a href="#about">О себе</li>
+                    <li a href="#diploms">Награды</li>
+                    <li a href="#blog">Мой блог</li>
+                    <li a href="#portfolio">Портфолио</li>
+                    <li a href="#contact">Контакты</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero-text">
+            <p>Frontend developer</p>
+            <h1>Hi, I'm <span>Samira</span></h1>
+        </div>
+    </section>
+    <section id="about">
+        <div class="flex">
+            <div class="about-img">
+                <img src="user.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h1>О себе</h1>
+                <p>Hi! My name is Samira. I'm 14 years old and I'm student of National Scool of Physics and Mathematics. I'm kind, cheerful and hard-working.</p>
+                <div class="about-info">
+                    <p class="about-links active-link skills" onclick="openTab('skills')">Навыки</p>
+                    <p  class="about-links education" onclick="openTab('education')">Образование</p>
+                </div>
+                <div id="skills" class="about-content active-content">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>HTTP requests</li>
+                        <li>GitHub</li>
+                        <li>Адаптивный дизайн</li>
+                    </ul>
+                </div>
+                <div id="education" class="about-content">
+                    <ul>
+                        <li><span>2022 - настоящее время</span> РФМШ</li>
+                        <li><span>2023 - 2024</span> Курсы по web дизайну</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="diploms">
+        <h1 class="sub-title">My Prizes</h1>
+        <div class="flex">
+            <div class="award">
+                <img src="award1.png">
+            </div>
+            <div class="award">
+                <img src="award2.png">
+            </div>
+            <div class="award">
+                <img src="award3.png">
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <h1 class="sub-title">My Blog</h1>
+        <div class="flex">
+            <div class="award">
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h1 class="sub-title">My Work</h1>        
+        <div class="flex">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt" style="color: #ff004f;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt" style="color: #ff004f;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt" style="color: #ff004f;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
